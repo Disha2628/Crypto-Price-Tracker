@@ -21,7 +21,6 @@ async function fetchCrypto() {
         if (data[searchQuery]) {
             displayCryptoInfo(searchQuery, data[searchQuery][currency], currency);
             console.log(data[searchQuery][currency]);
-            console.log(data);
             fetchHistoricalData(searchQuery, currency);
         } else {
             alert("Cryptocurrency not found!");
