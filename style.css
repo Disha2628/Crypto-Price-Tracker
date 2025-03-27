@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#cryptoInfo {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.dark-mode {
+    background: #333;
+    color: white;
+}
+
+.dark-mode .container {
+    background: #444;
+}
+
+.favorite {
+    color: red;
+    cursor: pointer;
+}
+
+ 

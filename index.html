@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Price Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Crypto Price Tracker</h1>
+        <div class="search-container">
+            <input type="text" id="cryptoSearch" placeholder="Search cryptocurrency..." />
+            <select id="currency">
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+                <option value="inr">INR</option>
+            </select>
+            <button onclick="fetchCrypto()">Search</button>
+        </div>
+
+        <div id="cryptoInfo"></div>
+
+        <h2>Historical Price Trend (Last 7 Days)</h2>
+        <canvas id="cryptoChart"></canvas>
+
+        <h2>Favorites</h2>
+        <div id="favorites"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="chart.js"></script>
+</body>
+</html>
